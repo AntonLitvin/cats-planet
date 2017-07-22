@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Планета котеек - Записи</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#fff">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#fff">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+
+	<!-- <style>body { opacity: 0; overflow-x: hidden; } html { background-color: #f7f7f7; }</style> -->
+
+</head>
+
+<body>
+
+<div class="loader">
+	<div class="loader-inner"></div>
+</div>
+
+<header class="main-header">
+
+	<div class="header-top wrapper-large">
+		<div class="container-fluid">
+			<div class="row">
+
+				<div class="col-xs-3 hidden-sm hidden-md hidden-lg">
+					<a href="#1" class="toggle-btn"><span></span></a>
+				</div>
+
+				<div class="col-xs-6 col-lg-7 col-sm-4 col-md-6">
+					<div class="header-logo">
+						<a href="#1"><img src="img/purr.gif" width="60" alt="Logo"><span>Планета Котеек</span></a>
+					</div>
+				</div>
+
+				<div class="col-xs-3 col-lg-5 col-sm-8 col-md-6 clearfix">
+
+					<div class="search-block">
+						<form>
+							<div class="search-form-wrapper">
+								<input type="search" class="search-field" placeholder="Поиск...">
+								<input type="submit" value="" class="search-btn">
+							</div>
+						</form>
+					</div>
+
+					<div class="user-block-desktop clearfix">
+						<div class="user-login">
+							<a href="#1">Авторизация</a>
+						</div>
+						<div class="bala-help">
+							<a href="#1">CatsHelp.com</a>
+						</div>
+					</div>
+					
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<nav class="page-nav-wrapper ">
+		<div class="wrapper-large">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<ul class="main-nav" style="list-style-type: none;">
+
+							<li class="lang-choise-mobile">
+								<div class="lang-rus">
+									<a href="#1" class="active">Рус</a>
+								</div>
+								<div class="lang-en">
+									<a href="#1">Eng</a>
+								</div>
+							</li>
+
+							<li><a href="#1">Новости</a></li>
+							<li class="active"><a href="#1">Статьи о кошках</a></li>
+							<li><a href="#1">Породы кошек</a></li>
+							<li><a href="#1">Уход и содержание</a></li>
+							<li><a href="#1">Ветеринария</a></li>
+							<li><a href="#1">Разведение</a></li>
+							<li><a href="#1">Форум</a></li>
+
+							<li class="user-block-wrapper">
+								<div class="user-block-mobile clearfix">
+									<div class="user-login">
+										<a href="#1">Авторизация</a>
+									</div>
+									<div class="bala-help">
+										<a href="#1">CatsHelp.com</a>
+									</div>
+								</div>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+</header>
+
+<section class="header-photo">
+	<div class="public">
+		<h1>Статьи о кошках</h1>
+	</div>
+</section>
+
+<main class="main-content wrapper-large">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-3 col-sm-4">
+
+				<div class="add-form-wrapper">
+					<button type="button" class="add-form-btn">Добавить фильтр <span> + </span></button>
+				</div>
+
+				<div class="sidebar-form-wrapper">
+					<aside class="sidebar-form">
+						<form action="/">
+
+							<div class="publication-type">
+								<h2>Тип публикации</h2>
+								<ul class="publication-type-list" style="list-style-type: none;">
+									<li class="pub-type-item">
+										<input type="checkbox" id="type1" name="article">
+										<label for="type1"><span></span>Статьи</label>
+									</li>
+									<li class="pub-type-item">
+										<input type="checkbox" id="type2" name="review">
+										<label for="type2"><span></span>Обзоры</label>
+									</li>
+									<li class="pub-type-item">
+										<input type="checkbox" id="type3" name="useful">
+										<label for="type3"><span></span>Полезное</label>
+									</li>
+								</ul>
+							</div>
+
+							<div class="publication-theme">
+								<h2>Тема публикации</h2>
+								<ul class="publication-theme-list" style="list-style-type: none;">
+									<li class="pub-theme-item opened">
+										<input type="checkbox" id="theme1" name="invalid" checked>
+										<label for="theme1" class="list-toggle"><span></span>Здоровье</label>
+
+										<ul class="subtheme-list" style="list-style-type: none;">
+											<li class="subtheme-item">
+												<input type="checkbox" id="subtheme1" name="subtheme1" checked>
+												<label for="subtheme1"><span></span>Чем кормить</label>
+											</li>
+											<li class="subtheme-item">
+												<input type="checkbox" id="subtheme2" name="subtheme2" checked>
+												<label for="subtheme2"><span></span>Болезни кошек</label>
+											</li>
+											<li class="subtheme-item">
+												<input type="checkbox" id="subtheme3" name="subtheme3" checked>
+												<label for="subtheme3"><span></span>Уход</label>
+											</li>
+											<li class="subtheme-item">
+												<input type="checkbox" id="subtheme4" name="subtheme4" checked>
+												<label for="subtheme4"><span></span>Разведение</label>
+											</li>
+											<li class="subtheme-item">
+												<input type="checkbox" id="subtheme5" name="subtheme5" checked>
+												<label for="subtheme5"><span></span>Прививки</label>
+											</li>
+										</ul>
+
+									</li>
+									<li class="pub-theme-item">
+										<input type="checkbox" id="theme2" name="education">
+										<label for="theme2"><span></span>Расписание выставок</label>
+									</li>
+									<li class="pub-theme-item">
+										<input type="checkbox" id="theme3" name="nasilie">
+										<label for="theme3"><span></span>Фотографии кошек</label>
+									</li>
+									<li class="pub-theme-item">
+										<input type="checkbox" id="theme4" name="social">
+										<label for="theme4"><span></span>Грумминг</label>
+									</li>
+									<li class="pub-theme-item">
+										<input type="checkbox" id="theme5" name="justice">
+										<label for="theme5"><span></span>Помощь</label>
+									</li>
+								</ul>
+							</div>
+
+							<div class="submit-filters">
+								<button type="submit" class="filters-btn">Применить фильтры</button>
+							</div>
+
+						</form>
+					</aside>
+				</div>
+			</div>
+
+			<div class="col-lg-9 col-sm-8">
+				<div class="publications">
+					<div class="row">
+
+						<div class="col-lg-4 col-sm-6">
+							<div class="public-item">
+								<div class="img-wrapper">
+									<img src="img/pub-1.jpg" alt="alt">
+								</div>
+								<span class="public-close">Закрыть</span>
+								<div class="public-text">
+									<h3>Самые красивые породы кошек</h3>
+									<p>Топ-10 рейтинг самых красивых пород кошек в мире по версии нашего сайта. Все породы из списка с фотографиями, благодаря чему вы сможете сами оценить их неповторимость.</p>
+								</div>
+								<span class="public-label" data-type-article="article">Статья</span>
+								<div class="read-more-wrapper">
+									<button type="button" class="read-more-btn">Читать<span></span></button>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-sm-6">
+							<div class="public-item">
+								<div class="img-wrapper">
+									<img src="img/pub-2.jpg" alt="alt">
+								</div>
+								<span class="public-close">Закрыть</span>
+								<div class="public-text">
+									<h3>Трава для кошек: какая любимая, как посадить и вырастить</h3>
+									<p>Все о траве для кошек: узнайте почему ваш питомец ест траву и какая трава ему больше по нраву. Подробная инструкция того, как посадить и вырастить траву в почве.</p>
+								</div>
+								<span class="public-label" data-type-article="useful">Полезное</span>
+								<div class="read-more-wrapper">
+									<button type="button" class="read-more-btn">Читать<span></span></button>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-sm-6">
+							<div class="public-item">
+								<div class="img-wrapper">
+									<img src="img/pub-3.jpg" alt="alt">
+								</div>
+								<span class="public-close">Закрыть</span>
+								<div class="public-text">
+									<h3>Все «за» и «против» стерилизации и кастрации котов и кошек</h3>
+									<p>Часто этот вопрос в отношении домашних котов и кошек для людей становится принципиальным. Есть две категории людей: кто абсолютно поддерживают стерилизацию, и те, кто абсолютно против неё.</p>
+								</div>
+								<span class="public-label" data-type-article="article">Статья</span>
+								<div class="read-more-wrapper">
+									<button type="button" class="read-more-btn">Читать<span></span></button>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-sm-6">
+							<div class="public-item">
+								<div class="img-wrapper">
+									<img src="img/pub-4.jpg" alt="alt">
+								</div>
+								<span class="public-close">Закрыть</span>
+								<div class="public-text">
+									<h3>Самые большие породы кошек: фото и факты</h3>
+									<p>Выбираете себе котёнка и интересует порода больших домашних кошек? Или может просто хотите узнать, какие домашние породы кошек самые большие? Тогда вы попали куда надо.</p>
+								</div>
+								<span class="public-label" data-type-article="review">Обзоры</span>
+								<div class="read-more-wrapper">
+									<button type="button" class="read-more-btn">Читать<span></span></button>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-sm-6">
+							<div class="public-item">
+								<div class="img-wrapper">
+									<img src="img/pub-5.jpg" alt="alt">
+								</div>
+								<span class="public-close">Закрыть</span>
+								<div class="public-text">
+									<h3>Нужно ли стричь кошку летом</h3>
+									<p>Многие владельцы длинношерстных котов задумывались о том, чтобы постричь своего кота. Особенно летом, когда на улице жара, кот становится малоподвижным...</p>
+								</div>
+								<span class="public-label" data-type-article="article">Статья</span>
+								<div class="read-more-wrapper">
+									<button type="button" class="read-more-btn">Читать<span></span></button>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-sm-6">
+							<div class="public-item">
+								<div class="img-wrapper">
+									<img src="img/pub-6.jpg" alt="alt">
+								</div>
+								<span class="public-close">Закрыть</span>
+								<div class="public-text">
+									<h3>Корма премиум класса для кошек</h3>
+									<p>Чем хорош корм премиум класса, а чем он плох? Какие корма для кошек относятся к данному классу, какие из них лучше других, а также стоит ли вообще кормить.</p>
+								</div>
+								<span class="public-label" data-type-article="review">Обзоры</span>
+								<div class="read-more-wrapper">
+									<button type="button" class="read-more-btn">Читать<span></span></button>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-sm-6">
+							<div class="public-item">
+								<div class="img-wrapper">
+									<img src="img/pub-7.jpg" alt="alt">
+								</div>
+								<span class="public-close">Закрыть</span>
+								<div class="public-text">
+									<h3>Виды и причины агрессии у кошек</h3>
+									<p>Ваша кошка проявляет агрессию к людям, кошкам или другим животным? Узнайте какие этому могут бить причины и как с этим можно бороться.</p>
+								</div>
+								<span class="public-label" data-type-article="article">Статья</span>
+								<div class="read-more-wrapper">
+									<button type="button" class="read-more-btn">Читать<span></span></button>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-sm-6">
+							<div class="public-item">
+								<div class="img-wrapper">
+									<img src="img/pub-8.jpg" alt="alt">
+								</div>
+								<span class="public-close">Закрыть</span>
+								<div class="public-text">
+									<h3>Лучшие кошки для квартиры: список пород с фото</h3>
+									<p>Хотите завести кошку в квартире? Узнайте какие породы подходят лучше всего. Список спокойных кошек для квартиры с фотографиями и названиями пород.</p>
+								</div>
+								<span class="public-label" data-type-article="review">Обзоры</span>
+								<div class="read-more-wrapper">
+									<button type="button" class="read-more-btn">Читать<span></span></button>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-sm-6">
+							<div class="public-item">
+								<div class="img-wrapper">
+									<img src="img/pub-9.jpg" alt="alt">
+								</div>
+								<span class="public-close">Закрыть</span>
+								<div class="public-text">
+									<h3>Какой запах отпугивает кошек (чтоб не гадили)</h3>
+									<p>Узнайте какие запахи не нравятся кошкам. Используя их можно не просто защитить мебель или другие дела и места от вашего домашнего любимца, но и отучить его от плохих.</p>
+								</div>
+								<span class="public-label" data-type-article="useful">Полезное</span>
+								<div class="read-more-wrapper">
+									<button type="button" class="read-more-btn">Читать<span></span></button>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+
+<footer class="main-footer">
+
+	<div class="footer-top wrapper-large">
+		<div class="container-fluid">
+			<div class="row">
+
+				<div class="col-xs-6 col-sm-4 col-md-2 col-lg-3">
+					<div class="footer-logo">
+						<a href="#1"><img src="img/cat-white-logo.png" alt="Logo footer"><span>Планета котеек</span></a>
+					</div>
+				</div>
+
+				<div class="col-md-10 col-lg-9">
+					<ul class="footer-nav" style="list-style-type: none;">
+						<li><a href="#1">Новости</a></li>
+						<li class="active"><a href="#1">Статьи о кошках</a></li>
+						<li><a href="#1">Породы кошек</a></li>
+						<li><a href="#1">Уход и содержание</a></li>
+						<li><a href="#1">Ветеринария</a></li>
+						<li><a href="#1">Разведение</a></li>
+						<li><a href="#1">Форум</a></li>
+					</ul>
+				</div>
+
+				<div class="col-sm-4 col-md-6">
+					<div class="user-login-bottom">
+						<a href="#1">Авторизация</a>
+					</div>
+				</div>
+
+				<div class="col-xs-6 col-sm-4 col-md-6">
+					<div class="write-us">
+						<button type="button" class="callback-btn">Напишите нам</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-bottom wrapper-large">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-6 col-sm-6">
+					<div class="bala-help-bottom">
+						<a href="#1">CatsHelp.com</a>
+					</div>
+				</div>
+				<div class="col-lg-6 col-sm-6">
+					<div class="lang-bottom">
+						<a href="#1"><img src="img/internet.png" alt="alt"></a>
+						<a href="#1">En</a>
+						<a href="#1" class="active">Ru</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<button type="button" class="scroll-up">To-top</button>
+
+<div class="callback" id="callback">
+	<form>
+		<span class="modal-close">Закрыть</span>
+		<input type="text" placeholder="Как Вас зовут" required>
+		<input type="email" placeholder="Ваш e-mail" required>
+		<textarea name="message" placeholder="Ваше сообщение" required></textarea>
+		<div class="button-wrapper">
+			<button type="submit">Отправить</button>
+		</div>
+	</form>
+</div>
+
+<div class="overlay"></div>
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>

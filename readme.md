@@ -2,6 +2,8 @@
 
 Based on test task from EVOLTECH
 
+[DEMO]https://antonlitvin.github.io/cats-planet/dist/
+
 Из задания:
 Сверстать адаптивную html страницу согласно дизайн-макетов (десктоп и мобайл).
 

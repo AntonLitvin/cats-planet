@@ -174,8 +174,6 @@ $('.scroll-up').on('click', function() {
 
 //Modal open-close
 $('.callback-btn').on('click', function() {
-	var wHeight = $(document).height();
-	$('#callback').css('top', wHeight-$('#callback').outerHeight() -60);
 	$('#callback').fadeIn();
 	$('.overlay').fadeIn();
 });

@@ -99,7 +99,9 @@ $('.pub-type-item input').on('change', function(){
 	if ($(this).is(':checked')) {
 
 		$('.public-label').each(function(){
+
 			var pubLabelType = $(this).data('typeArticle');
+
 			if (($checkBoxName == pubLabelType)) {
 				$(this).parents('.public-item').addClass('choosen').parent().show(200);
 			} else if (!($(this).parents('.public-item').hasClass('choosen'))){
@@ -110,10 +112,19 @@ $('.pub-type-item input').on('change', function(){
 	} else {
 
 		$('.public-label').each(function(){
-			$('.public-item').removeClass('choosen');
-			$(this).parents('.public-item').parent().show(200);
-		});
 
+			var pubLabelType = $(this).data('typeArticle');
+
+			if (($checkBoxName == pubLabelType)) {
+				$(this).parents('.public-item').removeClass('choosen');
+				$(this).parents('.public-item').parent().hide(200);
+			}
+
+			if(!($('.public-item').hasClass('choosen'))) {
+				$('.public-item').parent().show(200);
+			}
+
+		});
 	}
 });
 

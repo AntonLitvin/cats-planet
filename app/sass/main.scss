@@ -187,6 +187,7 @@ a {
 
 .search-btn {
 	border: none;
+	outline: none;
 	position: absolute;
 	width: 15px;
 	height: 15px;
@@ -568,19 +569,20 @@ a {
 	&::after {
 		content: "";
 		position: absolute;
-		width: 25px;
-		height: 3px;
+		width: 23px;
+		height: 2px;
+		border-radius: 2px;
 		background-color: #fff;
 	}
 	&::before {
 		transform: rotate(45deg);
-		top: 11px;
-		left: 0px;
+		top: 12px;
+		left: 1px;
 	}
 	&::after {
 		transform: rotate(-45deg);
-		top: 11px;
-		left: 0px;
+		top: 12px;
+		left: 1px;
 	}
 }
 
@@ -821,8 +823,12 @@ a {
 		font-size: 16px;
 		color: #fff;
 		border: none;
+		outline: none;
 		border-bottom: 1px solid rgba(255,255,255, 0.15);
 		background-color: $accent;
+		&:focus {
+			border-bottom: 1px solid rgba(255,255,255, 0.8);
+		}
 	}
 	textarea {
 		margin-bottom: 50px;
